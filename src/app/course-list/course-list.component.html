@@ -1,0 +1,13 @@
+    <div class="alert alert-info" role="alert" *ngFor="let course of courses">
+      <div class="d-flex flex-wrap flex-xl-nowrap flex-lg-nowrap flex-md-nowrap">
+        <div>
+            {{course.fields.title }}
+        </div>
+        <br>
+        <div class="p-4">
+          <div [innerHTML]="course.fields.description | mdToHtml"></div>
+          <p><i>{{ course.fields.dateOfSubject}}</i></p>
+        </div>
+      </div>
+
+  </div>
